@@ -947,6 +947,15 @@ void BitcoinGUI::showPrivateSendHelpClicked()
     dlg.exec();
 }
 
+void BitcoinGUI::showPrivateSendHelpClicked()
+{
+    if(!clientModel)
+        return;
+
+    HelpMessageDialog2 dlg(this, HelpMessageDialog2::pshelp);
+    dlg.exec();
+}
+
 #ifdef ENABLE_WALLET
 void BitcoinGUI::openClicked()
 {
