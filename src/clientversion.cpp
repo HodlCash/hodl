@@ -45,8 +45,8 @@ const std::string CLIENT_NAME("Swamp Core");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "$Format:%h$"
-#define GIT_COMMIT_DATE "$Format:%cD$"
+#define GIT_COMMIT_ID "cfb4753"
+#define GIT_COMMIT_DATE "Tue, 14 Apr 2020 11:08:19 -0400"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \

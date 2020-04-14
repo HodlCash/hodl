@@ -19,6 +19,7 @@
 #include "platformstyle.h"
 #include "rpcconsole.h"
 #include "utilitydialog.h"
+#include "utilitydialog2.h"
 
 #ifdef ENABLE_WALLET
 #include "walletframe.h"
@@ -118,7 +119,6 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *platformStyle, const NetworkStyle *n
     notificator(0),
     rpcConsole(0),
     helpMessageDialog(0),
-	infoMessageDialog(0),
     modalOverlay(0),
     prevBlocks(0),
     spinnerFrame(0),
@@ -937,10 +937,7 @@ void BitcoinGUI::showHelpMessageClicked()
 {
     helpMessageDialog->show();
 }
-void BitcoinGUI::showInfoMessageClicked()
-{
-    infoMessageDialog->show();
-}
+
 void BitcoinGUI::showPrivateSendHelpClicked()
 {
     if(!clientModel)

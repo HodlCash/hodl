@@ -17,6 +17,7 @@
 #include "transactionfilterproxy.h"
 #include "transactiontablemodel.h"
 #include "utilitydialog.h"
+#include "utilitydialog2.h"
 #include "walletmodel.h"
 
 #include "instantx.h"
@@ -294,6 +295,7 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(ui->privateSendAuto, SIGNAL(clicked()), this, SLOT(privateSendAuto()));
         connect(ui->privateSendReset, SIGNAL(clicked()), this, SLOT(privateSendReset()));
         connect(ui->privateSendInfo, SIGNAL(clicked()), this, SLOT(privateSendInfo()));
+		connect(ui->privateSendInfo2, SIGNAL(clicked()), this, SLOT(privateSendInfo2()));
         connect(ui->togglePrivateSend, SIGNAL(clicked()), this, SLOT(togglePrivateSend()));
         updateWatchOnlyLabels(model->haveWatchOnly());
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
@@ -451,6 +453,7 @@ void OverviewPage::updateAdvancedPSUI(bool fShowAdvancedPSUI) {
     ui->privateSendAuto->setVisible(fShowAdvancedPSUI);
     ui->privateSendReset->setVisible(fShowAdvancedPSUI);
     ui->privateSendInfo->setVisible(true);
+	    ui->privateSendInfo2->setVisible(true);
     ui->labelPrivateSendLastMessage->setVisible(fShowAdvancedPSUI);
 }
 
@@ -585,7 +588,11 @@ void OverviewPage::privateSendReset(){
         tr("PrivateSend was successfully reset."),
         QMessageBox::Ok, QMessageBox::Ok);
 }
-
+// new info button
+void OverviewPage::privateSendInfo2(){
+    HelpMessageDialog2 dlg(this, HelpMessageDialog2::pshelp);
+    dlg.exec();
+}
 void OverviewPage::privateSendInfo(){
     HelpMessageDialog dlg(this, HelpMessageDialog::pshelp);
     dlg.exec();
