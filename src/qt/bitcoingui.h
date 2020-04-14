@@ -30,6 +30,7 @@ class UnitDisplayStatusBarControl;
 class WalletFrame;
 class WalletModel;
 class HelpMessageDialog;
+class InfoMessageDialog;
 class ModalOverlay;
 class MasternodeList;
 
@@ -133,6 +134,7 @@ private:
     Notificator *notificator;
     RPCConsole *rpcConsole;
     HelpMessageDialog *helpMessageDialog;
+	InfoMessageDialog *infoMessageDialog;
     ModalOverlay *modalOverlay;
 
     /** Keep track of previous number of blocks, to detect progress */
