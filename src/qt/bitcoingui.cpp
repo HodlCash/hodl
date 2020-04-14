@@ -543,7 +543,7 @@ void BitcoinGUI::createActions()
     connect(toggleHideAction, SIGNAL(triggered()), this, SLOT(toggleHidden()));
     connect(showHelpMessageAction, SIGNAL(triggered()), this, SLOT(showHelpMessageClicked()));
     connect(showPrivateSendHelpAction, SIGNAL(triggered()), this, SLOT(showPrivateSendHelpClicked()));
-    connect(showPrivateSendHelpAction, SIGNAL(triggered()), this, SLOT(showPrivateSendHelpClicked2()));	
+    connect(showinfoAction, SIGNAL(triggered()), this, SLOT(showinfoClicked()));	
 
     // Jump directly to tabs in RPC-console
     connect(openInfoAction, SIGNAL(triggered()), this, SLOT(showInfo()));
@@ -948,7 +948,7 @@ void BitcoinGUI::showPrivateSendHelpClicked()
     dlg.exec();
 }
 
-void BitcoinGUI::showPrivateSendHelpClicked2()
+void BitcoinGUI::showinfoClicked()
 {
     if(!clientModel)
         return;
