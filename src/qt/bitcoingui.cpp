@@ -947,7 +947,7 @@ void BitcoinGUI::showPrivateSendHelpClicked()
     dlg.exec();
 }
 
-void BitcoinGUI::showPrivateSendHelpClicked()
+void BitcoinGUI::showPrivateSendHelpClicked2()
 {
     if(!clientModel)
         return;
