@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "receiswampinsdialog.h"
-#include "ui_receiswampinsdialog.h"
+#include "receivecoinsdialog.h"
+#include "ui_receivecoinsdialog.h"
 
 #include "addressbookpage.h"
 #include "addresstablemodel.h"
