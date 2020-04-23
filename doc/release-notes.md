@@ -1,9 +1,9 @@
-Swamp Core version 0.12.2.4
+Swamp Core version 1.2.1
 ==========================
 
 Release is now available from:
 
-  <https://github.com/swampdev-the-man/swamp/releases>
+  <https://github.com/swampcoin/swamp/releases>
 
 This is a new version release, bringing various bugfixes and other
 improvements.

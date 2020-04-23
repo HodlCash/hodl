@@ -1,7 +1,7 @@
 Swamp Core 1.2.1.0
 =====================
 
-This is the official reference wallet for Swamp digital currency and comprises the backbone of the Swamp peer-to-peer network. You can [download Swamp Core](https://github.com/swampdev-the-man/swamp/releases) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Swamp digital currency and comprises the backbone of the Swamp peer-to-peer network. You can [download Swamp Core](https://github.com/swampcoin/swamp/releases) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -11,8 +11,8 @@ The following are some helpful notes on how to run Swamp on your native platform
 
 Unpack the files into a directory and run:
 
-- `bin/swamp-qt` (GUI) or
-- `bin/swampd` (headless)
+- `swamp-qt` (GUI) or
+- `swampd` (headless)
 
 ### Windows
 
@@ -20,14 +20,14 @@ Unpack the files into a directory, and then run swamp-qt.exe.
 
 ### OS X
 
-Drag Swamp-Qt to your applications folder, and then run Swamp-Qt.
+Drag swamp-qt to your applications folder, and then run swamp-qt.
 
 ### Need Help?
 
-* See the [Swamp documentation](https://github.com/swampdev-the-man/swamp/tree/master/doc)
+* See the [Swamp documentation](https://github.com/swampcoin/swamp/tree/master/doc)
 for help and more information.
-* Ask for help on [SWAMP Discord channel](https://discord.gg/6vGNAh5).
-
+* Ask for help on [SWAMP Discord channel](https://discord.gg/PxwMzE2).
+* Ask for help on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=5236479) forums.
 
 Building
 ---------------------
@@ -57,7 +57,8 @@ The Swamp Core repo's [root README](/README.md) contains relevant information on
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on [SWAMP Discord channel](https://discord.gg/6vGNAh5).
+* Discuss on the [BitcointalkTalk](https://bitcointalk.org/index.php?topic=5236479) forums.
+* Discuss on [SWAMP Discord channel](https://discord.gg/PxwMzE2).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
